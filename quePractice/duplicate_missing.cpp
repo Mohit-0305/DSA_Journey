@@ -21,6 +21,11 @@
 // 2 <= nums.length <= 104
 // 1 <= nums[i] <= 104
 
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
 class Solution {
 public:
     vector<int> findErrorNums(vector<int>& nums) {
@@ -46,3 +51,16 @@ public:
     }
 };
 
+int main(){
+    vector<int> v1 = {1,2,2,4};
+    vector<int> v2 = {2,2};
+
+    Solution s;
+    vector<int> ans = s.findErrorNums(v1);
+    cout<<ans[0]<<" "<<ans[1]<<endl;
+
+    ans = s.findErrorNums(v2);
+    cout<<ans[0]<<" "<<ans[1]<<endl;
+
+    return 0;
+}
