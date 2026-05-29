@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 
+//Boyer-Moore Voting Algorithm (\(O(1)\) Space)
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
